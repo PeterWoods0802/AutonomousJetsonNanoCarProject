@@ -1,8 +1,8 @@
 # Autonomous JetsonNano CarProject
 This Project Involves a Jetson Nano, paired to an Arduino, DC Motors, Motor Controllers, Sensors, Camera and External Power to create an autonomous electric car 
 # Program List
-#### Roam Mode: *car will move autonomously
-#### Follow Mode:
+#### Roam Mode: *car will roam it's environment autonomously but remain within a radius established by the user. While It is Roaming It Also will use the 2d lidar scanner to create a 2d map of its environment we then use the capabilities of Darknet's Yolov4 Object detection and recognition to place a 2D label in place of the object*
+#### Follow Mode: *
 #### Track
 #### Create Mode
 # Essential Parts List:
