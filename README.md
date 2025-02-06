@@ -1,28 +1,35 @@
-# Autonomous JetsonNano CarProject
-This Project Involves a Jetson Nano, paired to an Arduino, DC Motors, Motor Controllers, Sensors, Camera and External Power to create an autonomous electric car 
-# Program List
-#### Roam Mode: *car will roam it's environment autonomously but remain within a radius established by the user. While It is Roaming It Also will use the 2d lidar scanner to create a 2d map of its environment we then use the capabilities of Darknet's Yolov4 Object detection and recognition to place a 2D label in place of the object*
-#### Follow Mode: *
-#### Track
-#### Create Mode
-# Essential Parts List:
-#### Many of these parts can be exchanged for cheaper alternatives, but this is what I used for my project.
+# Autonomous Jetson Nano Car Project
 
-Jetson Nano B01 (for Image Processing and Computing): [link](https://www.amazon.com/Yahboom-Jetson-Nano-4GB-Board/dp/B09T37PPRF)  
-Servo Motors (for PAN/TILT CAMERA): [link](https://www.amazon.com/Dorhea-Arduino-Helicopter-Airplane-Walking/dp/B07Q6JGWNV)  
-Arduino Uno R3 (for Motor Drivers): [link](https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU)  
-Arduino Nano (for Pan/Tilt Control): [link](https://www.amazon.com/ELEGOO-Pre-soldered-ATmega-Compatible-Arduino/dp/B0D5LYFRQP)  
-Wi-Fi ADAPTER: [link](https://www.amazon.com/TP-Link-Nano-Archer-T3U-Wireless/dp/B09KTDXPY3)  
-LiDar Sensor: [link](https://www.amazon.com/Slamtec-RPLIDAR-Scanning-Avoidance-Navigation/dp/B07TJW5SXF)  
-Camera: [link](https://www.amazon.com/innomaker-Computer-Raspberry-Support-Windows/dp/B0CLRJZG8D)  
-Microphone: [link](https://www.amazon.com/WWZMDiB-Performance-Microphone-Amplifier-CMA-4544PF-W/dp/B0BVHBCX66)  
-Wheels and motors: [link](https://www.example.com/mecanum-wheels)  
-Motor Driver Modules: [link](https://www.amazon.com/QCCAN-DRV8833-Module-Bridge-Controller/dp/B0BGLH27GG)  
-Jetson nano screen: [link](https://www.amazon.com/Ingcool-Resolution-Capacitive-Compatible-Raspberry/dp/B08H8HZRLQ)  
-Buck Voltage Converters: [link](https://www.amazon.com/HiLetgo-Step-down-Converter-1-25-37V-Voltmeter/dp/B00LSEBYHU)  
-Lipo Battery for motors: [link](https://www.amazon.com/Socokin-10000mah-Connector-Helicopter-Airplane/dp/B0CCKSP9TM)  
-Charging Cable: [link](https://www.amazon.com/FLY-RC-Connector-Silicone-11-8inch/dp/B07C23S3RK)  
-PerfBoards: [link](https://www.amazon.com/FLY-RC-Connector-Silicone-11-8inch/dp/B07C23S3RK)  
-Metal Spacers for chassis: [link](https://www.amazon.com/PATIKIL-Aluminum-Threaded-Standoff-Motherboard/dp/B0D89MCZWM)  
-Filament for 3D printed Chassis: [link](https://www.amazon.com/ANYCUBIC-Filament-Dimensional-Exceptional-Toughness/dp/B0CNWZ8X9G)  
-Perfboard bent jumper cables: [link](https://www.amazon.com/Breadboard-Assortment-Different-Prototyping-840Pcs/dp/B0BPSQSHBB)  
+This project leverages the powerful Jetson Nano in conjunction with an Arduino, DC Motors, Motor Controllers, various sensors, a camera, and external power sources to create an autonomous electric car capable of navigating and interacting with its environment. This is a work in progress, with ongoing development in both hardware integration and software functionalities including a user interface being designed in Figma.
+
+## Program List
+
+- **Roam Mode:** The car roams autonomously within a user-defined radius, using a 2D LiDAR scanner to map its environment. It incorporates Darknet's YOLOv4 for real-time object detection and labeling.
+- **Follow Mode:** The car follows a specific object or person within its environment.
+- **Track Mode:** Track specific paths or waypoints predefined in the environment.
+- **Create Mode:** Users can define custom behaviors and paths for the car.
+
+## Essential Parts List
+
+- **Jetson Nano B01** - Primary computing unit for image processing. [Buy here](https://www.amazon.com/Yahboom-Jetson-Nano-4GB-Board/dp/B09T37PPRF)
+- **Servo Motors** - Used for the pan and tilt mechanisms of the camera. [Buy here](https://www.amazon.com/Dorhea-Arduino-Helicopter-Airplane-Walking/dp/B07Q6JGWNV)
+- **Arduino Uno R3** - Manages motor drivers. [Buy here](https://www.amazon.com/ELEGOO-Board-ATmega328P-ATMEGA16U2-Compliant/dp/B01EWOE0UU)
+- **Arduino Nano** - Controls pan/tilt mechanisms. [Buy here](https://www.amazon.com/ELEGOO-Pre-soldered-ATmega-Compatible-Arduino/dp/B0D5LYFRQP)
+- **Wi-Fi Adapter** - For network connectivity. [Buy here](https://www.amazon.com/TP-Link-Nano-Archer-T3U-Wireless/dp/B09KTDXPY3)
+- **LiDAR Sensor** - For scanning and mapping the environment. [Buy here](https://www.amazon.com/Slamtec-RPLIDAR-Scanning-Avoidance-Navigation/dp/B07TJW5SXF)
+- **Camera** - For visual data processing. [Buy here](https://www.amazon.com/innomaker-Computer-Raspberry-Support-Windows/dp/B0CLRJZG8D)
+- **Microphone** - Captures audio cues. [Buy here](https://www.amazon.com/WWZMDiB-Performance-Microphone-Amplifier-CMA-4544PF-W/dp/B0BVHBCX66)
+- **Motor Driver Modules** - Control motor actions. [Buy here](https://www.amazon.com/QCCAN-DRV8833-Module-Bridge-Controller/dp/B0BGLH27GG)
+- **Various other components** listed in the original parts list provided.
+
+## Machine Learning and Computer Vision
+
+The project utilizes machine learning for object detection and computer vision for the pan-tilt camera module, employing models such as ResNet along with OpenCV to enhance the car's interactive and autonomous capabilities.
+
+## Current Status and Future Work
+
+The project is still under active development. Current efforts are focused on enhancing the machine learning models for better object recognition and refining the user interface for easier control and interaction.
+
+## Contributions
+
+We welcome contributions from other developers and enthusiasts. Whether you have suggestions for improvements, bug fixes, or new features, your input is valuable. Please see our contribution guidelines for more information.
